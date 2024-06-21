@@ -1,10 +1,10 @@
 
-from bank import Bank ,AbortTransaction
+from bank import Bank,AbortTransaction
 
 class Main:
     @staticmethod
     def run():
-        bank = Bank("9 AM - 5 PM", "123 Bank St.", "555-555-5555")
+        bank = Bank("9 AM -- 5 PM", "123 Bank St.", "555-555-5555")
 
         while True:
             print("\nWelcome to the bank. Choose an option:")

@@ -8,6 +8,7 @@ class Bank:
         self.address = address
         self.phone = phone
 
+
     def create_account(self, name, balance, password):
         account = Account(name, balance, password)
         self.accounts[self.next_account_number] = account
@@ -42,6 +43,7 @@ class Bank:
         password = input("Enter password: ")
         account.check_password_match(password)
 
+
     def user_balance(self):
         account = self.get_user_account()
         balance = account.get_balance()
@@ -61,3 +63,4 @@ class Bank:
         for account_number, account in self.accounts.items():
             print(f"Account Number: {account_number}")
             account.show()
+
